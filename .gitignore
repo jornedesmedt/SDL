@@ -1,0 +1,12 @@
+/.vs
+/bin
+/bin-int
+/SDL2main
+/SDL2test
+/SDL2
+/VisualC/.vs
+/VisualC/SDL/Win32
+/VisualC/Win32
+/SDL.sln
+/GenerateProjects.bat
+/vendor
