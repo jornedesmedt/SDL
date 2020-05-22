@@ -1,4 +1,5 @@
---[[workspace "SDL"
+if(not SDL_dependency) then
+workspace "SDL"
 	architecture "x64"
 
 	configurations
@@ -8,7 +9,8 @@
 	}
 
 outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
-]]--
+end
+
 src_minimal = {
 	"src/*.c",
 	"src/audio/*.c",
@@ -275,6 +277,11 @@ project "SDL2"
 	includedirs
 	{
 		"include"
+	}
+
+	flags
+	{
+		"NoRuntimeChecks"
 	}
 
 	filter "system:windows"
