@@ -1,4 +1,4 @@
-workspace "SDL"
+--[[workspace "SDL"
 	architecture "x64"
 
 	configurations
@@ -8,7 +8,7 @@ workspace "SDL"
 	}
 
 outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
-
+]]--
 src_minimal = {
 	"src/*.c",
 	"src/audio/*.c",
