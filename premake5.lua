@@ -260,7 +260,6 @@ project "SDL2"
 	location "SDL2"
 	kind "SharedLib"
 	language "C"
-
 	
 	staticruntime "Off"
 
@@ -285,7 +284,6 @@ project "SDL2"
 	}
 
 	filter "system:windows"
-		staticruntime "On"
 		systemversion "latest"
 
 		symbols "On"
